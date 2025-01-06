@@ -8,7 +8,8 @@ import static util.ThreadUtils.*;
 
 public class SpinLockMain {
     public static void main(String[] args) {
-        SpinLockBad spinLock = new SpinLockBad();
+//        SpinLockBad spinLock = new SpinLockBad();
+        SpinLock spinLock = new SpinLock();
 
         Runnable task = new Runnable() {
             @Override
